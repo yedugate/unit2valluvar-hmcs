@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<button id="backBtn" style="padding:.6rem .9rem;border:0;border-radius:.6rem;background:#e2e8f0;cursor:pointer">← Back</button>
+<script>
+  (function () {
+    var el = document.getElementById('backBtn');
+    if (!el) return;
+    el.addEventListener('click', function () {
+      var target = 'index.html';
+      fetch(target, {method: 'HEAD'})
+        .then(r => r.ok ? location.href = target : history.back())
+        .catch(() => history.back());
+    });
+  })();
+</script>
+
+<meta charset="utf-8">
+<title>Food Standards</title>
+<style>
+  body {font-family: Arial, sans-serif; line-height:1.6; margin: 20px; max-width: 800px;}
+  h1,h2,h3 {color:#2c3e50;}
+  table {border-collapse: collapse; width: 100%; margin: 15px 0;}
+  table, th, td {border:1px solid #444;}
+  th, td {padding: 8px; text-align: left;}
+  .diagram {border:1px dashed #777; padding:15px; margin:20px 0; background:#f9f9f9;}
+  .keywords {background:#eef; padding:10px; margin:20px 0;}
+</style>
+</head>
+<body>
+
+<h1>🍎 Food Standards </h1>
+
+<h2>1. History of Food Standards</h2>
+<ul>
+  <li><b>Pre-modern era:</b> Rules existed in ancient texts (e.g., Manusmriti, Sangam literature) warning against impure/adulterated food.</li>
+  <li><b>19th–20th century:</b> Many countries introduced laws to prevent adulteration (e.g., UK’s Adulteration of Food Act, 1860).</li>
+  <li><b>India:</b> Prevention of Food Adulteration Act (PFA), 1954 → later replaced by <b>Food Safety and Standards Act (FSSA), 2006</b>.</li>
+  <li><b>Global:</b> <b>Codex Alimentarius Commission</b> established in 1963 by FAO & WHO to set international food standards.</li>
+</ul>
+
+<h2>2. What are Food Standards?</h2>
+<p><b>Definition:</b> Food standards are official rules, regulations, and guidelines that ensure food is <b>safe, hygienic, nutritious, and suitable</b> for human consumption. They cover the entire food chain — <i>farm → processing → retail → consumer</i>.</p>
+
+<h2>3. Purposes of Food Standards</h2>
+<table>
+  <tr><th>Purpose</th><th>Meaning</th><th>Example</th></tr>
+  <tr><td>Protect Public Health</td><td>Prevent foodborne illness & contamination</td><td>Limit on pesticide residues</td></tr>
+  <tr><td>Ensure Quality</td><td>Maintain taste, nutrition, uniformity</td><td>Grade A milk standards</td></tr>
+  <tr><td>Facilitate Trade</td><td>Uniform global standards → easier exports</td><td>Codex limits for additives</td></tr>
+  <tr><td>Consumer Information</td><td>Mandatory labeling for awareness</td><td>Nutrition facts on packs</td></tr>
+</table>
+
+<h2>4. Key Organizations</h2>
+<table>
+  <tr><th>Organization</th><th>Level</th><th>Role</th></tr>
+  <tr><td><b>FSSAI</b> (Food Safety & Standards Authority of India)</td><td>India</td><td>Sets standards, licenses businesses, inspects & penalizes</td></tr>
+  <tr><td><b>BIS</b> (Bureau of Indian Standards)</td><td>India</td><td>Product specifications, safe handling/storage codes</td></tr>
+  <tr><td><b>Codex Alimentarius</b></td><td>International</td><td>Global food standards (FAO+WHO)</td></tr>
+</table>
+
+<h2>5. What Food Standards Cover</h2>
+<table>
+  <tr><th>Area</th><th>Coverage</th><th>Student Example</th></tr>
+  <tr><td>Hygiene</td><td>Clean handling, sanitation, storage temp</td><td>Cold chain for milk</td></tr>
+  <tr><td>Ingredients & Additives</td><td>Approved substances & safe limits</td><td>Permitted food colors</td></tr>
+  <tr><td>Contaminants</td><td>Max limits for toxins, heavy metals</td><td>Lead in drinking water</td></tr>
+  <tr><td>Labeling</td><td>Name, net weight, nutrition, veg/non-veg mark</td><td>Green dot for vegetarian food</td></tr>
+  <tr><td>Packaging</td><td>Safe, protective, non-toxic</td><td>Tetra pack vs. plastic bottle</td></tr>
+</table>
+
+<h2>6. Diagram (Concept Map)</h2>
+<div class="diagram">
+<pre>
+              FOOD STANDARDS
+      ┌──────────┬───────────┬───────────┐
+      Hygiene   Ingredients   Contaminants
+                       │
+           ┌───────────┴───────────┐
+           Labeling           Packaging
+</pre>
+</div>
+
+<h2>7. Top 10 Key Terms</h2>
+<div class="keywords">
+<ol>
+  <li><b>Food Standard</b> – Official rule for food quality & safety</li>
+  <li><b>Adulteration</b> – Mixing inferior/unsafe substances in food</li>
+  <li><b>Contaminant</b> – Harmful chemical, toxin, or microbe in food</li>
+  <li><b>Additive</b> – Substance added to preserve or improve food</li>
+  <li><b>Labeling</b> – Mandatory consumer information on pack</li>
+  <li><b>Packaging</b> – Safe container to protect food quality</li>
+  <li><b>FSSAI</b> – India’s statutory body for food safety</li>
+  <li><b>BIS</b> – Bureau setting product specifications</li>
+  <li><b>Codex Alimentarius</b> – International food standards body</li>
+  <li><b>Food Safety & Standards Act (2006)</b> – India’s main food law</li>
+</ol>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food Standards — 5 × 10‑Marks Q&A (Class 11–12)</title>
+  <meta name="description" content="Five exam‑style 10‑mark questions with model answers on Food Standards (definitions, objectives, label rules, additives/contaminants, sampling & testing). Includes tables, inline SVG diagrams, print button, and classroom‑ready layout."/>
+  <style>
+    :root{--ink:#0f172a;--muted:#475569;--line:#e2e8f0;--bg:#ffffff;--card:#f8fafc;--brand:#0ea5e9;--accent:#10b981;--warn:#ef4444;--gold:#f59e0b;--vio:#7c3aed}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    .wrap{max-width:980px;margin:0 auto;padding:24px}
+    .banner{display:flex;gap:16px;align-items:center;padding:16px 20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(180deg,#f0f9ff,#fff)}
+    .logo{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;background:#e0f2fe;border:1px solid #bae6fd}
+    .logo svg{width:34px;height:34px}
+    h1{margin:0;font-size:clamp(22px,3.6vw,34px)}
+    .subtitle{color:var(--muted)}
+    .controls{display:flex;gap:10px;margin-top:12px}
+    button{border:0;background:var(--brand);color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer}
+    button.secondary{background:#e2e8f0;color:#0b1220}
+    hr{border:0;border-top:1px solid var(--line);margin:24px 0}
+    h2{margin-top:28px;font-size:clamp(18px,2.5vw,24px)}
+    h3{margin-top:20px}
+    p{margin:8px 0}
+    .note{background:var(--card);border:1px dashed var(--line);padding:12px 14px;border-radius:12px}
+    table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.98rem}
+    th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top}
+    th{background:#f1f5f9;text-align:left}
+    tbody tr:nth-child(even){background:#fafafa}
+    .diagram{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff}
+    .caption{font-size:.9rem;color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
+    @media(min-width:820px){.grid{grid-template-columns:1fr 1fr}}
+    @media print{.controls{display:none}.banner{border:none;background:#fff}.diagram,table,.note{break-inside:avoid}.wrap{padding:0}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="banner">
+      <div class="logo" aria-hidden="true">
+        <!-- scale + checklist icon -->
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
+          <circle cx="32" cy="32" r="28" stroke="#0ea5e9" fill="#e0f2fe"/>
+          <path d="M18 22h28M32 14v32" stroke="#0ea5e9"/>
+          <path d="M22 40l4 4 8-10" stroke="#10b981" stroke-width="3"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Food Standards — 5 × 10‑Marks Q&amp;A (Class 11–12)</h1>
+        <div class="subtitle">Definitions • Objectives • Label rules • Additives & Contaminants • Sampling & Testing • Diagrams & Tables</div>
+        <div class="controls">
+          <button onclick="window.print()">🖨️ Print</button>
+          <button class="secondary" id="backBtn">← Back</button>
+        </div>
+      </div>
+    </header>
+
+    <hr/>
+
+    <!-- Q1 -->
+    <section>
+      <h2>Q1. Define <em>food standards</em>. Explain their objectives and pillars with examples. (10 marks)</h2>
+      <p><strong>Answer:</strong></p>
+      <ul>
+        <li><strong>Definition:</strong> Food standards are <em>official specifications</em> that define a food’s <strong>identity</strong> (what it is), <strong>quality</strong> (minimum criteria), and <strong>safety</strong> (limits for hazards) to protect health and ensure fair trade.</li>
+        <li><strong>Objectives:</strong> Protect consumers, prevent fraud, enable fair trade, and support public health policy.</li>
+      </ul>
+      <div class="grid">
+        <div>
+          <table>
+            <thead><tr><th>Pillar</th><th>What it sets</th><th>Simple example</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Identity</strong></td><td>Name, essential ingredients, definition</td><td>“Milk” = secretion of mammals; no added water</td></tr>
+              <tr><td><strong>Quality</strong></td><td>Minimum composition, sensory criteria</td><td>Min. fat/SNF for toned milk</td></tr>
+              <tr><td><strong>Safety</strong></td><td>Limits for additives, contaminants, microbes</td><td>Permitted colors only; aflatoxin limit in nuts</td></tr>
+              <tr><td><strong>Labelling</strong></td><td>Mandatory pack information</td><td>Ingredients list, allergens, veg/non‑veg mark</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="diagram">
+          <svg viewBox="0 0 600 230" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Pillars of Standards">
+            <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 8,4 0,8Z" fill="#0ea5e9"/></marker></defs>
+            <rect x="210" y="10" width="180" height="40" rx="10" fill="#e0f2fe" stroke="#0ea5e9"/>
+            <text x="235" y="35" font-size="16">FOOD STANDARDS</text>
+            <g>
+              <rect x="30" y="90" width="120" height="38" rx="8" fill="#dcfce7" stroke="#10b981"/>
+              <text x="60" y="115" font-size="14">Identity</text>
+            </g>
+            <g>
+              <rect x="180" y="90" width="120" height="38" rx="8" fill="#fee2e2" stroke="#ef4444"/>
+              <text x="210" y="115" font-size="14">Quality</text>
+            </g>
+            <g>
+              <rect x="330" y="90" width="120" height="38" rx="8" fill="#fef3c7" stroke="#f59e0b"/>
+              <text x="360" y="115" font-size="14">Safety</text>
+            </g>
+            <g>
+              <rect x="480" y="90" width="120" height="38" rx="8" fill="#e9d5ff" stroke="#7c3aed"/>
+              <text x="510" y="115" font-size="14">Labelling</text>
+            </g>
+            <line x1="300" y1="50" x2="90" y2="90" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr)"/>
+            <line x1="300" y1="50" x2="240" y2="90" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr)"/>
+            <line x1="300" y1="50" x2="390" y2="90" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr)"/>
+            <line x1="300" y1="50" x2="540" y2="90" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr)"/>
+          </svg>
+          <div class="caption">Four pillars that standards typically cover.</div>
+        </div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <!-- Q2 -->
+    <section>
+      <h2>Q2. How are standards developed and enforced? Illustrate the cycle and list key authorities. (10 marks)</h2>
+      <p><strong>Answer:</strong></p>
+      <ul>
+        <li><strong>Authorities (examples):</strong> National regulator (e.g., FSSAI), international reference (Codex), state/local food safety departments, notified labs.</li>
+        <li><strong>Process:</strong> Risk assessment → Draft standard → Stakeholder consultation → Notification → Implementation → Surveillance → Review.</li>
+      </ul>
+      <div class="diagram">
+        <svg viewBox="0 0 760 220" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Standards Cycle">
+          <defs><marker id="arr2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 8,4 0,8Z" fill="#0ea5e9"/></marker></defs>
+          <g>
+            <rect x="20" y="20" width="160" height="44" rx="10" fill="#f1f5f9" stroke="#94a3b8"/>
+            <text x="40" y="48">Risk Assessment</text>
+          </g>
+          <g>
+            <rect x="200" y="20" width="160" height="44" rx="10" fill="#dcfce7" stroke="#10b981"/>
+            <text x="225" y="48">Draft Standard</text>
+          </g>
+          <g>
+            <rect x="380" y="20" width="160" height="44" rx="10" fill="#e9d5ff" stroke="#7c3aed"/>
+            <text x="392" y="48">Consultation</text>
+          </g>
+          <g>
+            <rect x="560" y="20" width="180" height="44" rx="10" fill="#fee2e2" stroke="#ef4444"/>
+            <text x="575" y="48">Notification/Rules</text>
+          </g>
+          <g>
+            <rect x="110" y="120" width="160" height="44" rx="10" fill="#fff7ed" stroke="#f59e0b"/>
+            <text x="148" y="148">Implementation</text>
+          </g>
+          <g>
+            <rect x="300" y="120" width="160" height="44" rx="10" fill="#e0f2fe" stroke="#0ea5e9"/>
+            <text x="328" y="148">Surveillance</text>
+          </g>
+          <g>
+            <rect x="490" y="120" width="160" height="44" rx="10" fill="#dcfce7" stroke="#10b981"/>
+            <text x="526" y="148">Review/Update</text>
+          </g>
+          <path d="M180 42h20" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+          <path d="M360 42h20" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+          <path d="M540 42h20" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+          <path d="M590 64 L540 120" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+          <path d="M270 120 L300 64" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+          <path d="M460 120 L420 64" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+          <path d="M210 64 L170 120" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr2)"/>
+        </svg>
+        <div class="caption">A simplified standards‑to‑enforcement loop.</div>
+      </div>
+      <table>
+        <thead><tr><th>Body</th><th>Main role</th><th>Classroom example</th></tr></thead>
+        <tbody>
+          <tr><td>National authority</td><td>Sets & updates standards; issues advisories</td><td>Defines identity & quality for “milk” categories</td></tr>
+          <tr><td>State enforcement</td><td>Licensing, inspections, sampling</td><td>Checks labels and hygiene at a dairy unit</td></tr>
+          <tr><td>Notified labs</td><td>Tests samples vs standards</td><td>Analyzes fat/SNF, aflatoxin, additives</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr/>
+
+    <!-- Q3 -->
+    <section>
+      <h2>Q3. What do <em>labelling standards</em> require? Present a table and sketch a front‑panel layout. (10 marks)</h2>
+      <p><strong>Answer:</strong></p>
+      <table>
+        <thead><tr><th>Item on label</th><th>Why it matters</th><th>Tip for exams</th></tr></thead>
+        <tbody>
+          <tr><td>Name & category</td><td>Identity; prevents misleading names</td><td>“Flavoured milk”, not just “milk”</td></tr>
+          <tr><td>Ingredients (descending) & <strong>allergens</strong></td><td>Safety for allergic consumers</td><td>Highlight milk, gluten, nuts, soy</td></tr>
+          <tr><td>Net quantity</td><td>Fair trade</td><td>g / ml as applicable</td></tr>
+          <tr><td>Dates (Mfg/Pkd/Best‑before)</td><td>Traceability & shelf‑life</td><td>Don’t confuse “use‑by” vs “best‑before”</td></tr>
+          <tr><td>Veg/Non‑veg logo</td><td>Preference & religion</td><td>Green/Maroon symbol</td></tr>
+          <tr><td>Nutritional info</td><td>Informed choice</td><td>per 100 g/ml table</td></tr>
+          <tr><td>License no., batch/lot, FBO address</td><td>Accountability</td><td>Helps in recalls/complaints</td></tr>
+        </tbody>
+      </table>
+      <div class="diagram">
+        <svg viewBox="0 0 700 240" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Front Label Sketch">
+          <rect x="20" y="20" width="660" height="200" rx="14" fill="#ffffff" stroke="#94a3b8"/>
+          <rect x="40" y="36" width="280" height="28" rx="6" fill="#e0f2fe" stroke="#0ea5e9"/>
+          <text x="48" y="56" font-size="14">Name of Food & Category</text>
+          <rect x="560" y="36" width="100" height="28" rx="6" fill="#dcfce7" stroke="#10b981"/>
+          <text x="572" y="56" font-size="14">Veg/Non‑veg</text>
+          <rect x="40" y="80" width="240" height="110" rx="8" fill="#fef3c7" stroke="#f59e0b"/>
+          <text x="54" y="100" font-size="13">Nutrition (per 100 g)</text>
+          <line x1="54" y1="110" x2="260" y2="110" stroke="#f59e0b"/>
+          <text x="54" y="128" font-size="12">Energy | Protein | Fat | Carbs | Sugar | Sodium</text>
+          <rect x="300" y="80" width="160" height="110" rx="8" fill="#e9d5ff" stroke="#7c3aed"/>
+          <text x="312" y="100" font-size="13">Ingredients + Allergens</text>
+          <rect x="470" y="80" width="210" height="50" rx="8" fill="#fff7ed" stroke="#f59e0b"/>
+          <text x="482" y="100" font-size="13">Net Qty • MRP • Dates</text>
+          <rect x="470" y="140" width="210" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+          <text x="482" y="160" font-size="13">License No. • Batch • Address</text>
+        </svg>
+        <div class="caption">Simplified layout of mandatory front/side panel information.</div>
+      </div>
+    </section>
+
+    <hr/>
+
+    <!-- Q4 -->
+    <section>
+      <h2>Q4. Summarise standards for <em>additives & contaminants</em> with examples. Include a table. (10 marks)</h2>
+      <p><strong>Answer:</strong></p>
+      <ul>
+        <li>Standards specify <strong>which additives</strong> are permitted in a food and <strong>maximum levels</strong> (often in ppm), plus limits for <strong>contaminants</strong> (pesticide residues, heavy metals, natural toxins).</li>
+        <li>Always declare additives by <strong>name or INS code</strong> on labels; choose the <em>minimum effective</em> level (hurdle approach).</li>
+      </ul>
+      <table>
+        <thead><tr><th>Category</th><th>Purpose</th><th>Typical classroom example*</th></tr></thead>
+        <tbody>
+          <tr><td>Preservatives</td><td>Inhibit microbes</td><td>Beverage: sodium benzoate (INS 211) — limited use</td></tr>
+          <tr><td>Antioxidants</td><td>Prevent rancidity</td><td>Snacks: BHA/BHT — within permitted range</td></tr>
+          <tr><td>Colors</td><td>Restore/standardise color</td><td>Only permitted colors; natural turmeric/annatto common</td></tr>
+          <tr><td>Heavy metals</td><td>Safety limits</td><td>Lead/arsenic limits in drinking water & foods</td></tr>
+          <tr><td>Mycotoxins</td><td>Control natural toxins</td><td>Aflatoxin limit in groundnuts/dairy</td></tr>
+        </tbody>
+      </table>
+      <p class="note"><strong>*Note:</strong> Values vary by food category and jurisdiction. Use the latest schedules for precise limits when required in practicals or projects.</p>
+    </section>
+
+    <hr/>
+
+    <!-- Q5 -->
+    <section>
+      <h2>Q5. Describe sampling, testing and conformity assessment under food standards. Add a flow diagram. (10 marks)</h2>
+      <p><strong>Answer:</strong></p>
+      <ol>
+        <li><strong>Sampling:</strong> Official sample drawn, sealed, coded; chain‑of‑custody maintained.</li>
+        <li><strong>Testing:</strong> Notified lab analyses against standard methods (composition, additives, contaminants, microbes).</li>
+        <li><strong>Assessment:</strong> Result compared with limits → compliant/non‑compliant; actions: improvement notice, recall, prosecution as applicable.</li>
+        <li><strong>Records:</strong> Labels, batches, and test reports recorded for traceability.</li>
+      </ol>
+      <div class="diagram">
+        <svg viewBox="0 0 820 230" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" aria-label="Sampling to Action">
+          <defs><marker id="arr3" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 8,4 0,8Z" fill="#0ea5e9"/></marker></defs>
+          <rect x="20" y="30" width="170" height="44" rx="10" fill="#e0f2fe" stroke="#0ea5e9"/>
+          <text x="58" y="58">Inspection</text>
+          <rect x="210" y="30" width="170" height="44" rx="10" fill="#dcfce7" stroke="#10b981"/>
+          <text x="255" y="58">Sampling</text>
+          <rect x="400" y="30" width="170" height="44" rx="10" fill="#e9d5ff" stroke="#7c3aed"/>
+          <text x="455" y="58">Lab Testing</text>
+          <rect x="590" y="30" width="210" height="44" rx="10" fill="#fff7ed" stroke="#f59e0b"/>
+          <text x="620" y="58">Compare with Standard</text>
+          <path d="M190 52h20M380 52h20M570 52h20" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr3)"/>
+
+          <rect x="120" y="120" width="200" height="44" rx="10" fill="#dcfce7" stroke="#10b981"/>
+          <text x="170" y="148">Compliant → Release</text>
+          <rect x="420" y="120" width="220" height="44" rx="10" fill="#fee2e2" stroke="#ef4444"/>
+          <text x="440" y="148">Non‑compliant → Action</text>
+          <path d="M690 74 L220 120" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr3)"/>
+          <path d="M690 74 L530 120" stroke="#0ea5e9" stroke-width="3" marker-end="url(#arr3)"/>
+        </svg>
+        <div class="caption">From inspection to decision under a standard.</div>
+      </div>
+      <table>
+        <thead><tr><th>Test area</th><th>Typical methods (classroom)</th><th>What it shows</th></tr></thead>
+        <tbody>
+          <tr><td>Composition</td><td>Fat/SNF in milk; moisture in flour</td><td>Meets identity/quality</td></tr>
+          <tr><td>Additives</td><td>Label check; TLC/HPLC (advanced)</td><td>Within permitted uses/levels</td></tr>
+          <tr><td>Contaminants</td><td>Mycotoxin kits; heavy metals (instrumental)</td><td>Below safety limits</td></tr>
+          <tr><td>Microbiology</td><td>Plate count; pathogens (selective media)</td><td>Hygiene & safety</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr/>
+
+    <footer class="note">
+      Classroom‑ready summary. Numbers/examples are illustrative for learning; always refer to the latest official schedules (national regulator & Codex) for exact limits when needed.
+      <details>
+        <summary>Back‑button snippet (paste into sister pages)</summary>
+        <pre>&lt;button id="backBtn" style="padding:10px 14px;border-radius:12px;border:0;background:#e2e8f0;cursor:pointer"&gt;← Back&lt;/button&gt;
+&lt;script&gt;(function(){var el=document.getElementById('backBtn');if(!el)return;el.addEventListener('click',function(){var t=el.getAttribute('data-back')||'index.html';fetch(t,{method:'HEAD'}).then(r=>{if(r.ok)location.href=t;else history.back()}).catch(()=>history.back())});})();&lt;/script&gt;</pre>
+      </details>
+    </footer>
+  </div>
+
+  <script>
+    (function(){var el=document.getElementById('backBtn');if(!el)return;el.addEventListener('click',function(){var t=el.getAttribute('data-back')||'index.html';fetch(t,{method:'HEAD'}).then(r=>{if(r.ok)location.href=t;else history.back()}).catch(()=>history.back())});})();
+  </script>
+</body>
+</html>

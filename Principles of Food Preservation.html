@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🥫 Principles of Food Preservation — Complete Notes & 10×5 Q&A (Class 11–12)</title>
+  <meta name="description" content="Student‑friendly, print‑ready notes on Principles of Food Preservation for Class 11–12: low/high temperature, chemical preservatives, irradiation, deep freezing, canning, sterilization, diagrams, tables, pros/cons, exam hooks, and 10 five‑mark Q&A."/>
+  <style>
+    :root{
+      --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --bg:#ffffff; --card:#f8fafc;
+      --brand:#0ea5e9; --accent:#10b981; --warn:#ef4444; --gold:#f59e0b; --vio:#7c3aed;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55}
+    .wrap{max-width: 980px; margin: 0 auto; padding: 24px}
+
+    /* Banner */
+    .banner{display:flex; align-items:center; gap:16px; padding:16px 20px; border:1px solid var(--line); background:linear-gradient(180deg,#f0f9ff, #ffffff); border-radius:16px}
+    .logo{width:52px; height:52px; border-radius:12px; display:grid; place-items:center; background:#e0f2fe; border:1px solid #bae6fd}
+    .logo svg{width:34px;height:34px}
+    h1{font-size: clamp(22px, 3.6vw, 34px); margin:0}
+    .subtitle{color:var(--muted); font-size: 0.98rem}
+
+    /* Controls */
+    .controls{display:flex; gap:10px; margin:14px 0 0 0}
+    button{border:none; background:var(--brand); color:#fff; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer}
+    button.secondary{background:#e2e8f0; color:#0b1220}
+
+    hr{border:0; border-top:1px solid var(--line); margin:24px 0}
+    h2{margin-top:28px; font-size: clamp(18px, 2.5vw, 24px)}
+    h3{margin-top:22px; font-size: clamp(16px, 2.1vw, 20px)}
+    p{margin:8px 0}
+
+    .note{background:var(--card); border:1px dashed var(--line); padding:12px 14px; border-radius:12px}
+
+    /* Tables */
+    table{width:100%; border-collapse:collapse; margin:12px 0; font-size: 0.98rem}
+    th, td{border:1px solid var(--line); padding:8px 10px; vertical-align:top}
+    th{background:#f1f5f9; text-align:left}
+    tbody tr:nth-child(even){background:#fafafa}
+
+    .grid{display:grid; grid-template-columns:1fr; gap:14px}
+    @media(min-width:800px){.grid{grid-template-columns:1fr 1fr}}
+    .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px}
+
+    pre{background:#0b1220; color:#fff; padding:12px 14px; border-radius:12px; overflow:auto; font-size:0.92rem}
+    .diagram{border:1px solid var(--line); border-radius:12px; padding:10px; background:#ffffff}
+    .caption{font-size:0.9rem; color:var(--muted); margin-top:6px}
+
+    /* Q&A styling */
+    .qa h3{margin-top:18px}
+    .qa .answer{margin:8px 0 12px 0}
+
+    @media print{
+      .controls{display:none}
+      .banner{border:none; background:#fff}
+      .card, .diagram, .note, table{break-inside:avoid}
+      a[href]:after{content:" (" attr(href) ")"; font-size:0.85em}
+      .wrap{padding:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="banner">
+      <div class="logo" aria-hidden="true">
+        <!-- Can + snowflake & heat icon -->
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Preservation">
+          <rect x="18" y="10" width="28" height="44" rx="6" fill="#fff7ed" stroke="#f59e0b"/>
+          <path d="M14 18l6 3-6 3 6 3-6 3 6 3" stroke="#0ea5e9"/>
+          <path d="M50 20c0 6-4 10-10 10" stroke="#ef4444"/>
+        </svg>
+      </div>
+      <div>
+        <h1>🥫 Principles of Food Preservation — Complete Notes</h1>
+        <div class="subtitle">Low/High Temperature • Chemical Preservatives • Irradiation • Deep Freezing • Canning • Sterilization • Diagrams • Pros/Cons • Exam Hooks</div>
+        <div class="controls no-print">
+          <button onclick="window.print()" title="Print this handout">🖨️ Print</button>
+          <button class="secondary" id="backBtn" title="Go back to index or previous page">← Back</button>
+        </div>
+      </div>
+    </header>
+
+    <hr/>
+
+    <section id="intro">
+      <h2>1. Introduction</h2>
+      <ul>
+        <li><strong>Food preservation</strong> = the science of <strong>preventing food spoilage</strong> by controlling <strong>microorganisms, enzymes, insects, and chemical changes</strong>.</li>
+        <li><strong>Goal:</strong> Extend <strong>shelf life</strong>, maintain <strong>safety</strong>, retain <strong>nutritional value & sensory quality</strong> (taste, texture, aroma).</li>
+        <li><strong>Principles used:</strong> Temperature control, chemical treatment, radiation, and packaging methods.</li>
+      </ul>
+    </section>
+
+    <section id="low-temp">
+      <h2>2. Preservation by <strong>Low Temperature</strong></h2>
+      <h3>Refrigeration (0–5 °C)</h3>
+      <ul>
+        <li>Slows microbial growth & enzyme action.</li>
+        <li>Used for short-term storage.</li>
+        <li><em>Examples:</em> Milk, fruits, vegetables, meat.</li>
+      </ul>
+      <h3>Freezing (–18 °C)</h3>
+      <ul>
+        <li>Stops microbial activity; enzymes become inactive.</li>
+        <li>Maintains food for months.</li>
+        <li><em>Examples:</em> Meat, ice cream, bread.</li>
+      </ul>
+      <p><strong>Advantages:</strong> Maintains freshness, nutrition. <strong>Limitations:</strong> Cold chain required; some texture changes after thawing.</p>
+    </section>
+
+    <section id="high-temp">
+      <h2>3. Preservation by <strong>High Temperature</strong></h2>
+      <h3>Blanching (90–100 °C, short time)</h3>
+      <ul>
+        <li>Destroys enzymes in vegetables.</li>
+        <li>Pre-treatment before freezing/canning.</li>
+      </ul>
+      <h3>Pasteurization (60–80 °C, few seconds/minutes)</h3>
+      <ul>
+        <li>Kills harmful pathogens, keeps useful microbes (e.g., lactic acid bacteria).</li>
+        <li><em>Example:</em> Pasteurized milk, fruit juices.</li>
+      </ul>
+      <h3>Sterilization (>100 °C)</h3>
+      <ul>
+        <li>Kills all microorganisms including spores.</li>
+        <li><em>Example:</em> Canned soups, UHT milk.</li>
+      </ul>
+      <p><strong>Advantages:</strong> Safe, long shelf life. <strong>Limitations:</strong> Loss of heat-sensitive vitamins (C, B1), change in taste.</p>
+    </section>
+
+    <section id="chem-pres">
+      <h2>4. <strong>Chemical Preservatives</strong></h2>
+      <ul>
+        <li><strong>Definition:</strong> Substances added to inhibit microbial growth.</li>
+        <li><strong>Types:</strong>
+          <ul>
+            <li><em>Class I:</em> Traditional — salt, sugar, vinegar.</li>
+            <li><em>Class II:</em> Synthetic — sodium benzoate, sorbates, nitrates.</li>
+          </ul>
+        </li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Preservative</th>
+            <th>Use</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Salt</td><td>Creates osmotic pressure, inhibits bacteria</td><td>Pickles, fish</td></tr>
+          <tr><td>Sugar</td><td>Reduces water activity</td><td>Jams, jellies</td></tr>
+          <tr><td>Vinegar (acetic acid)</td><td>Lowers pH</td><td>Sauces, chutneys</td></tr>
+          <tr><td>Sodium benzoate</td><td>Anti-fungal</td><td>Soft drinks</td></tr>
+          <tr><td>Nitrates/nitrites</td><td>Inhibit <em>Clostridium botulinum</em></td><td>Processed meats</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Pros:</strong> Cheap, effective. <strong>Cons:</strong> Overuse may affect health (e.g., nitrosamines from nitrites).</p>
+    </section>
+
+    <section id="irradiation">
+      <h2>5. <strong>Irradiation</strong></h2>
+      <ul>
+        <li><strong>Definition:</strong> Use of <strong>ionizing radiation</strong> (gamma rays, X-rays, electron beams) to kill microbes/insects and delay spoilage.</li>
+        <li><strong>Principle:</strong> Breaks DNA of microorganisms → prevents reproduction.</li>
+        <li><strong>Applications:</strong>
+          <ul>
+            <li>Sterilizing spices, grains.</li>
+            <li>Delaying sprouting in potatoes, onions.</li>
+            <li>Extending shelf life of fresh fruits.</li>
+          </ul>
+        </li>
+        <li><strong>Safety:</strong> Approved by WHO, FAO; does not make food radioactive.</li>
+      </ul>
+    </section>
+
+    <section id="deep-freezing">
+      <h2>6. <strong>Deep Freezing</strong></h2>
+      <ul>
+        <li><strong>Process:</strong> Rapidly lowering temperature to –30 °C or lower.</li>
+        <li><strong>Effect:</strong> Water in food forms fine ice crystals → prevents cell damage.</li>
+        <li><strong>Advantages:</strong> Preserves texture, flavor, nutrients better than slow freezing.</li>
+        <li><strong>Examples:</strong> Frozen peas, fish fillets, chicken.</li>
+      </ul>
+    </section>
+
+    <section id="canning">
+      <h2>7. <strong>Canning</strong></h2>
+      <ul>
+        <li><strong>Principle:</strong> Food is sealed in <strong>airtight containers</strong> and heated to destroy microorganisms → vacuum prevents re-contamination.</li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li>Cleaning and preparing food.</li>
+            <li>Filling into cans/bottles with syrup or brine.</li>
+            <li>Exhausting air and sealing.</li>
+            <li>Heating (sterilization).</li>
+            <li>Cooling and labeling.</li>
+          </ol>
+        </li>
+        <li><strong>Examples:</strong> Canned fruits, soups, juices, jams.</li>
+      </ul>
+      <p><strong>Pros:</strong> Long shelf life (months–years). <strong>Cons:</strong> Requires equipment, may lose some nutrients.</p>
+    </section>
+
+    <section id="sterilization">
+      <h2>8. <strong>Sterilization</strong></h2>
+      <ul>
+        <li><strong>Definition:</strong> Process of killing <strong>all microorganisms including spores</strong> by high heat or chemicals.</li>
+        <li><strong>Methods:</strong>
+          <ul>
+            <li>Autoclaving (>121 °C under pressure).</li>
+            <li>Ultra-high temperature (UHT) processing of milk (135 °C for a few seconds).</li>
+          </ul>
+        </li>
+        <li><strong>Applications:</strong>
+          <ul>
+            <li>Packaged milk.</li>
+            <li>Baby food and medical foods.</li>
+            <li>Canned products.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="diagram">
+      <h2>9. Concept Diagram (Sketch)</h2>
+      <div class="diagram">
+        <pre> PRINCIPLES OF FOOD PRESERVATION
+        ┌──────────────────────────────────────┐
+        │ Temperature Control                  │
+        │   • Low temp: refrigeration, freezing│
+        │   • High temp: blanching, pasteurize │
+        ├──────────────────────────────────────┤
+        │ Chemicals                            │
+        │   • Salt, sugar, vinegar, benzoates  │
+        ├──────────────────────────────────────┤
+        │ Irradiation                          │
+        │   • Gamma/X-rays, electron beams     │
+        ├──────────────────────────────────────┤
+        │ Canning & Sterilization              │
+        │   • Airtight sealing + heating       │
+        └──────────────────────────────────────┘</pre>
+        <div class="caption">Core levers that slow or destroy spoilage agents.</div>
+      </div>
+    </section>
+
+    <section id="adv-lim">
+      <h2>10. Advantages & Limitations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Method</th>
+            <th>Advantage</th>
+            <th>Limitation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Low temperature</td><td>Retains freshness, nutrition</td><td>Cold chain costly</td></tr>
+          <tr><td>High temperature</td><td>Safe, effective</td><td>Vitamin loss, taste change</td></tr>
+          <tr><td>Chemicals</td><td>Cheap, simple</td><td>May cause allergies, health risks</td></tr>
+          <tr><td>Irradiation</td><td>Extends shelf life, safe</td><td>Public fear, high cost</td></tr>
+          <tr><td>Deep freezing</td><td>Preserves quality</td><td>Requires equipment</td></tr>
+          <tr><td>Canning</td><td>Very long shelf life</td><td>Nutrient loss, cost</td></tr>
+          <tr><td>Sterilization</td><td>Complete safety</td><td>Alters taste, nutrients</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="exam-terms">
+      <h2>11. Exam Hook — Top 10 Key Terms</h2>
+      <ol>
+        <li><strong>Blanching</strong> – mild heating to inactivate enzymes.</li>
+        <li><strong>Pasteurization</strong> – heating to kill pathogens.</li>
+        <li><strong>Sterilization</strong> – complete destruction of microbes.</li>
+        <li><strong>Preservative</strong> – chemical inhibiting spoilage.</li>
+        <li><strong>Deep Freezing</strong> – rapid freezing at –30 °C.</li>
+        <li><strong>Irradiation</strong> – ionizing radiation to kill microbes.</li>
+        <li><strong>Canning</strong> – sealing & heating food in containers.</li>
+        <li><strong>FSSAI</strong> – Indian authority regulating preservatives.</li>
+        <li><strong>Cold Chain</strong> – continuous refrigeration system.</li>
+        <li><strong>Clostridium botulinum</strong> – deadly bacterium controlled by nitrites.</li>
+      </ol>
+    </section>
+
+    <hr/>
+
+    <section id="qa" class="qa">
+      <h2>🥫 Principles of Food Preservation — 10 × 5 Marks Q&amp;A</h2>
+
+      <h3>Q1. What are the principles of food preservation? Explain briefly.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li>Food preservation = preventing spoilage by controlling <strong>microorganisms, enzymes, and chemical changes</strong>.</li>
+          <li><strong>Principles:</strong>
+            <ul>
+              <li>Removal/inactivation of microbes (heating, sterilization, irradiation).</li>
+              <li>Slowing microbial growth (low temp, chemical preservatives).</li>
+              <li>Preventing contamination (packaging, canning).</li>
+            </ul>
+          </li>
+          <li>Aim: Extend shelf life, maintain safety, retain nutrition.</li>
+        </ul>
+      </div>
+
+      <h3>Q2. How does low temperature help in food preservation? Give examples.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Refrigeration (0–5 °C):</strong> Slows microbial growth and enzyme activity.</li>
+          <li><strong>Chilling:</strong> Keeps food fresh for short periods (milk, fruits).</li>
+          <li><strong>Freezing (−18 °C):</strong> Stops microbial activity almost completely.</li>
+          <li><em>Examples:</em> Fresh meat in freezer, milk in fridge, ice cream storage.</li>
+        </ul>
+      </div>
+
+      <h3>Q3. Explain the use of high temperature in food preservation.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Blanching (90–100 °C):</strong> Destroys enzymes in vegetables.</li>
+          <li><strong>Pasteurization (60–80 °C):</strong> Kills pathogens in milk/juice.</li>
+          <li><strong>Sterilization (&gt;100 °C):</strong> Kills all microbes.</li>
+          <li>Heat denatures enzymes, kills bacteria, increases shelf life.</li>
+          <li><em>Examples:</em> Pasteurized milk, boiled canned soups.</li>
+        </ul>
+      </div>
+
+      <h3>Q4. What are chemical preservatives? Give types and examples.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Definition:</strong> Chemicals added to inhibit microbial growth.</li>
+          <li><strong>Types:</strong>
+            <ul>
+              <li><em>Class I:</em> Common salt, sugar, vinegar.</li>
+              <li><em>Class II:</em> Benzoates, sorbates, nitrates.</li>
+            </ul>
+          </li>
+          <li>Function: Lower pH, inhibit enzymes, kill microbes.</li>
+          <li><em>Examples:</em> Sodium benzoate in squashes, nitrites in meat.</li>
+        </ul>
+      </div>
+
+      <h3>Q5. Write short notes on food irradiation.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Definition:</strong> Use of ionizing radiation (gamma rays, X-rays, electron beams) to destroy microbes/insects.</li>
+          <li><strong>Principle:</strong> Breaks DNA of microbes, prevents spoilage.</li>
+          <li><strong>Uses:</strong>
+            <ul>
+              <li>Sterilizes spices.</li>
+              <li>Extends shelf life of potatoes, onions, fruits.</li>
+            </ul>
+          </li>
+          <li>Safe and approved by WHO/FAO.</li>
+        </ul>
+      </div>
+
+      <h3>Q6. How does deep freezing preserve food?</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Process:</strong> Food rapidly frozen at −18 °C or below.</li>
+          <li><strong>Effect:</strong> Water turns to ice → microbes can’t grow, enzymes slow.</li>
+          <li>Maintains flavor, texture, nutrition.</li>
+          <li><em>Examples:</em> Frozen peas, fish, chicken, ice cream.</li>
+        </ul>
+      </div>
+
+      <h3>Q7. Explain the principle and process of canning.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Principle:</strong> Food sealed in airtight containers → heated to kill microbes → vacuum created.</li>
+          <li><strong>Steps:</strong>
+            <ol>
+              <li>Cleaning and cutting food.</li>
+              <li>Filling in cans with syrup/brine.</li>
+              <li>Exhausting air and sealing.</li>
+              <li>Heating (sterilization).</li>
+              <li>Cooling and labeling.</li>
+            </ol>
+          </li>
+          <li><em>Examples:</em> Canned fruits, jams, juices, soups.</li>
+        </ul>
+      </div>
+
+      <h3>Q8. What is sterilization? How is it applied in food preservation?</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Definition:</strong> Process of killing all microorganisms including spores using high heat or chemicals.</li>
+          <li><strong>Methods:</strong>
+            <ul>
+              <li>Heat sterilization (autoclave, &gt;121 °C).</li>
+              <li>UHT (ultra-high temperature) treatment for milk.</li>
+            </ul>
+          </li>
+          <li><strong>Applications:</strong>
+            <ul>
+              <li>Canned foods.</li>
+              <li>Packaged milk.</li>
+              <li>Medical food products.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <h3>Q9. Differentiate between refrigeration, freezing, and deep freezing.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <table>
+          <thead>
+            <tr><th>Method</th><th>Temp Range</th><th>Effect</th><th>Example</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Refrigeration</td><td>0–5 °C</td><td>Slows microbial growth</td><td>Milk, vegetables</td></tr>
+            <tr><td>Freezing</td><td>−18 °C</td><td>Stops microbial activity</td><td>Meat, ice cream</td></tr>
+            <tr><td>Deep Freezing</td><td>−30 °C or lower (rapid)</td><td>Preserves texture & nutrients better</td><td>Frozen peas, fish fillets</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Q10. Discuss the advantages and disadvantages of food preservation methods.</h3>
+      <div class="answer">
+        <p><strong>Answer:</strong></p>
+        <ul>
+          <li><strong>Advantages:</strong>
+            <ul>
+              <li>Longer shelf life.</li>
+              <li>Safe, convenient foods.</li>
+              <li>Reduces food waste.</li>
+              <li>Seasonal foods available year-round.</li>
+            </ul>
+          </li>
+          <li><strong>Disadvantages:</strong>
+            <ul>
+              <li>Loss of some nutrients (vitamin C in canning).</li>
+              <li>Cost of equipment (cold storage, irradiation).</li>
+              <li>Overuse of chemicals may affect health.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr/>
+
+    <footer style="font-size:0.9rem; color:var(--muted)">
+      <p><strong>Tip:</strong> Use the <em>Print</em> button for a clean A4 handout. This page is mobile‑friendly and classroom‑ready.</p>
+      <details>
+        <summary>Back‑button snippet (paste into sister pages)</summary>
+        <pre>&lt;button id="backBtn" style="padding:10px 14px; border-radius:12px; border:0; background:#e2e8f0; cursor:pointer"&gt;← Back&lt;/button&gt;
+&lt;script&gt;
+  (function(){
+    var el = document.getElementById('backBtn');
+    if(!el) return;
+    el.addEventListener('click', function(){
+      // Prefer index file if present; else use history
+      var target = el.getAttribute('data-back') || 'index.html';
+      fetch(target, {method:'HEAD'}).then(function(r){
+        if(r.ok) location.href = target; else history.back();
+      }).catch(function(){ history.back(); });
+    });
+  })();
+&lt;/script&gt;</pre>
+      </details>
+    </footer>
+  </div>
+
+  <script>
+    // Back button in this page
+    (function(){
+      var el = document.getElementById('backBtn');
+      if(!el) return;
+      el.addEventListener('click', function(){
+        var target = el.getAttribute('data-back') || 'index.html';
+        fetch(target, {method:'HEAD'}).then(function(r){
+          if(r.ok) location.href = target; else history.back();
+        }).catch(function(){ history.back(); });
+      });
+    })();
+  </script>
+</body>
+</html>
